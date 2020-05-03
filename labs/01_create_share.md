@@ -1,6 +1,6 @@
 ## 1. Create a Sent Share
-1. Log on to the Azure Portal
-2. Navigate to your Azure Data Share account
+1. Navigate to your Azure Data Share resource
+2. Click **Sent Shares**
 3. Click **Create**
 ![alt text](../images/azure_data_share_sent_share_create.png "Azure Data Share - Create Sent Share")
 
