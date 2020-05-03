@@ -54,9 +54,9 @@
 ![alt text](../images/azure_data_share_sent_share_review.png "Azure Data Share - Review and Create")
 
 At this point, you will return to the **Sent Shares** screen and see several notifications indicating that your share has been created successfully.
-* New data share was created
-* Invitations were added
-* Datasets were added
+* New data share was created successfully
+* Invitations were added successfully
+* Datasets were added successfully
 ![alt text](../images/azure_data_share_sent_share_success.png "Azure Data Share - Notifications")
 
 Note: As part of the data share creation process, the Azure Data Share resource is granted the appropriate level of access to read data from the source data store, in this case - Storage Blob Data Reader. This can be verified by navigating to the Azure Storage Account > Access Control (IAM) and clicking **Role assignments**.
