@@ -28,3 +28,5 @@ Disclaimer:
 * Lab 1 - [Create a Sent Share](/labs/01_create_share.md)
 * Lab 2 - [Accept an Azure Data Share Invitation](/labs/02_accept_invitation.md)
 * Lab 3 - [Map Dataset to Target Data Store](/labs/03_configure_dataset.md)
+* Lab 4 - [Configure a Snapshot Schedule](/labs/04_configure_snapshot.md)
+* Lab 4 - [Trigger a Snapshot](/labs/05_trigger_snapshot.md)

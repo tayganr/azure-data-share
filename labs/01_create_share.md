@@ -1,8 +1,17 @@
 # 1. Create a Sent Share
 
-| Persona | Time  | Source Data Store  |
+## Table of Contents
+[Azure Data Share Lab](../README.md)
+* Lab 1 - Create a Sent Share
+* Lab 2 - [Accept an Azure Data Share Invitation](../labs/02_accept_invitation.md)
+* Lab 3 - [Map Dataset to Target Data Store](../labs/03_configure_dataset.md)
+* Lab 4 - [Configure a Snapshot Schedule](../labs/04_configure_snapshot.md)
+* Lab 5 - [Trigger Snapshot](../labs/05_trigger_snapshot.md)
+
+## Overview
+| Persona | Time | Action |
 | -----  | ----- | ----- |
-| Data Provider | 10 minutes | Azure Blob Storage |
+| Data Provider | 10 minutes | Create a data share |
 
 ## Summary
 In this lab, you will:

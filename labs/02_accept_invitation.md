@@ -1,8 +1,17 @@
 # 2. Accept an Azure Data Share Invitation
 
-| Persona | Time  |
-| -----  | ----- |
-| Data Consumer | 5 minutes |
+## Table of Contents
+[Azure Data Share Lab](../README.md)
+* Lab 1 - [Create a Sent Share](../labs/01_create_share.md)
+* Lab 2 - Accept an Azure Data Share Invitation
+* Lab 3 - [Map Dataset to Target Data Store](../labs/03_configure_dataset.md)
+* Lab 4 - [Configure a Snapshot Schedule](../labs/04_configure_snapshot.md)
+* Lab 5 - [Trigger Snapshot](../labs/05_trigger_snapshot.md)
+
+## Overview
+| Persona | Time | Action |
+| -----  | ----- | ----- |
+| Data Consumer | 5 minutes | Accept invitation |
 
 ## Summary
 In this lab, you will:
