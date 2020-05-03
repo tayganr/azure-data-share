@@ -16,7 +16,8 @@
 ## Learnings
 In this lab, you will:
 * Trigger a full copy snapshot
-* Trigger an incremental snapshot
+* Review the snapshot execution history
+* Review the metrics logged for each data movement activity
 
 ![alt text](../images/azure_data_share_data_consumer.png "Azure Data Share - Data Consumer")
 
