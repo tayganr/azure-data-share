@@ -42,3 +42,6 @@ The next screen will show a list of datasets within the share with the following
 
 At this point, you will return to the **Received Shares** screen and see a notification that the dataset was mapped successfully.
 ![alt text](../images/azure_data_share_received_share_mapped.png "Azure Data Share - Mapped Dataset")
+
+Note: As part of the data share subscription process, the Azure Data Share resource is granted the appropriate level of access to write to the target data store, in this case - **Storage Blob Data Contributor**. This can be verified by navigating to the Azure Storage Account > Access Control (IAM) and clicking **Role assignments**.
+![alt text](../images/azure_data_share_received_share_role_assignment.png "Azure Data Share - Storage Blob Data Contributor")
