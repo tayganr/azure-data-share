@@ -26,3 +26,4 @@ Disclaimer:
 
 ## Lab Modules
 * Lab 1 - [Create a Sent Share](/labs/01_create_share.md)
+* Lab 2 - [Accept an Azure Data Share Invitation](/labs/02_accept_invitation.md)
