@@ -24,4 +24,5 @@ Disclaimer:
 * In reality, a more likely scenario will involve the data provider and data consumer belonging to completely distinct organizations (i.e. B2B) with their own Azure subscriptions under seperate tenants.
 * That said, the process of creating a data share, having an invitation sent out, the invitation being accepted, and ultimately the data consumer mapping the shared data into their environment is the same.
 
-<!-- ## 1. Create a Sent Share -->
+## Lab Modules
+* Lab 1 - [Create a Sent Share](/labs/01_create_share.md)
