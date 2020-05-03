@@ -1,4 +1,21 @@
-## 1. Create a Sent Share
+# 1. Create a Sent Share
+
+| Persona | Time  | Source Data Store  |
+| -----  | ----- | ----- |
+| Data Provider | 10 minutes | Azure Blob Storage |
+
+## Summary
+In this lab, you will:
+* Create a data share
+* Add a dataset
+* Invite recipients
+* Configure a snapshot schedule
+* Monitor invitations
+
+![alt text](../images/azure_data_share_data_provider.png "Azure Data Share - Data Provider")
+
+## Steps
+
 1. Navigate to your Azure Data Share resource
 2. Click **Sent Shares**
 3. Click **Create**
@@ -67,4 +84,4 @@ Note: As part of the data share creation process, the Azure Data Share resource 
     * Status (e.g. Pending)
     * Shared By (Full Name)
     * Shared On (Date Time)
-![alt text](../images/azure_data_share_sent_share_invitations.png "Azure Data Share - Snapshot Settings")
+![alt text](../images/azure_data_share_sent_share_invitations.png "Azure Data Share - Monitor Invitations")
