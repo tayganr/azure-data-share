@@ -53,7 +53,7 @@
 - Snapshot settings
 ![alt text](../images/azure_data_share_sent_share_review.png "Azure Data Share - Review and Create")
 
-You should now be returned to the **Sent Shares** screen and see several notifications indicating that your share has been created successfully.
+At this point, you will return to the **Sent Shares** screen and see several notifications indicating that your share has been created successfully.
 * New data share was created
 * Invitations were added
 * Datasets were added
