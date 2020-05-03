@@ -6,7 +6,7 @@
 * Lab 2 - Accept an Azure Data Share Invitation
 * Lab 3 - [Map Dataset to Target Data Store](../labs/03_configure_dataset.md)
 * Lab 4 - [Configure a Snapshot Schedule](../labs/04_configure_snapshot.md)
-* Lab 5 - [Trigger Snapshot](../labs/05_trigger_snapshot.md)
+* Lab 5 - [Trigger a Snapshot](../labs/05_trigger_snapshot.md)
 
 ## Overview
 | Persona | Time | Action |
