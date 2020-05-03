@@ -6,10 +6,9 @@
 
 ## Summary
 In this lab, you will:
-* Open an Azure Data Share invitation
-* Review the terms of use
-* Map the share to a target data share account
-* Create a share subscription
+* Configure a dataset to receive data into your target data store
+* Map the shared dataset to a target store (Azure Blob Storage)
+* Review Azure Data Share role assignment
 
 ![alt text](../images/azure_data_share_data_consumer.png "Azure Data Share - Data Consumer")
 
