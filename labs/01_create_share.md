@@ -79,7 +79,7 @@ At this point, you will return to the **Sent Shares** screen and see several not
 Note: As part of the data share creation process, the Azure Data Share resource is granted the appropriate level of access to read from the source data store, in this case - **Storage Blob Data Reader**. This can be verified by navigating to the Azure Storage Account > Access Control (IAM) and clicking **Role assignments**.
 ![alt text](../images/azure_data_share_sent_share_role_assignment.png "Azure Data Share - Storage Blob Data Reader")
 
-24. To monitor the status of your invitations, navigate to the **Azure Data Share resource > Sent Shares > `[data_share_name]` > Invitations**. You should see the following attributes:  
+24. To monitor the status of your invitations, navigate to the **`[data_share_account]` > Sent Shares > `[data_share_name]` > Invitations**. You should see the following attributes:  
     * Shared With (Email Address)
     * Status (e.g. Pending)
     * Shared By (Full Name)
