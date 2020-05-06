@@ -4,6 +4,8 @@ Azure Data Share is a fully managed service that enables organisations to share 
 ![alt text](images/azure_data_share_concept.png "Azure Data Share")
 
 ## Lab Prerequisites
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftayganr%2Fazure-data-share%2Fmaster%2Fazuredeploy.json)  
+
 **Data Provider**
 1. [Azure Subscription](https://azure.microsoft.com/en-us/free/)
 2. [Create an Azure Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) (e.g. datashare_rg_provider)
