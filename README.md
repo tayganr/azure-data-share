@@ -3,8 +3,16 @@ Azure Data Share is a fully managed service that enables organisations to share 
 
 ![alt text](images/azure_data_share_concept.png "Azure Data Share")
 
-## Lab Prerequisites
+## Lab Solution Template
+This template encompasses two Azure resources:
+1. Azure Storage Account
+2. Azure Data Share Account
+
+You can click the "Deploy to Azure" button to deploy the solution directly from GitHub. Note: The solution template will only deploy one set of resources, representing one of the two personas used in this lab (data consumer and data provider). A second set of resources will need to be deployed to mimic both personas, whether that be in the same Azure subscription, or in a completely distinct tenant. In which case, you can click the "Deploy to Azure" button a second time so that before you start the lab modules, there are two sets of resources - one for the data consumer, and the other for the data provider.
+
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftayganr%2Fazure-data-share%2Fmaster%2Fazuredeploy.json)  
+
+## Lab Prerequisites
 
 **Data Provider**
 1. [Azure Subscription](https://azure.microsoft.com/en-us/free/)
