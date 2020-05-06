@@ -1,0 +1,41 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "persona": {
+            "type": "string",
+            "defaultValue": "consumer",
+            "allowedValues": ["consumer","provider"],
+            "metadata": {
+                "description": "Select the Azure Data Share persona - Data Consumer or Data Provider."
+            }
+        }
+    },
+    "functions": [],
+    "variables": {},
+    "resources": [
+        {
+            "name": "[concat(parameters('persona'), uniqueString(resourceGroup().id))]",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-06-01",
+            "tags": {},
+            "location": "[resourceGroup().location]",
+            "kind": "StorageV2",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            }
+        },
+        {
+            "type": "Microsoft.DataShare/accounts",
+            "apiVersion": "2019-11-01",
+            "name": "[concat(parameters('persona'), uniqueString(resourceGroup().id))]",
+            "location": "[resourceGroup().location]",
+            "identity": {
+                "type": "SystemAssigned"
+            },
+            "properties": {}
+        }
+    ],
+    "outputs": {}
+}
