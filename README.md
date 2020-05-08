@@ -33,6 +33,8 @@ $storage = az storage account list --resource-group $rg --output json --query "[
 $container = 'sales'
 $csv1_filename = 'sales01.csv'
 $csv2_filename = 'sales02.csv'
+
+# Dummy Data
 $csv1_data = @"
 'business_unit','amount'
 >> 'marketing',233
