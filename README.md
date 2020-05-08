@@ -37,15 +37,15 @@ $csv2_filename = 'sales02.csv'
 # Dummy Data
 $csv1_data = @"
 'business_unit','amount'
->> 'marketing',233
->> 'finance',318
->> 'sales',322
->> "@
+'marketing',233
+'finance',318
+'sales',322
+"@
 $csv2_data = @"
->> 'business_unit','amount'
->> 'marketing',675
->> 'finance',54
->> sales',224
+'business_unit','amount'
+'marketing',675
+'finance',54
+'sales',224
 "@
 
 # 1. Create a container within the storage account
