@@ -68,11 +68,11 @@ rm $csv2_filename
 ```powershell
 # Define Variables
 $rg = 'share_consumer'
-$storage = az storage account list --resource-group $rg --output json --query "[0].name" --output table
+$storage = az storage account list --resource-group $rg --output json --query "[0].name"
 $container = 'landing-zone'
 
 # Create a container within the storage account
-az storage container create --name $container --resource-group $rg --account-name $storage -- output table
+az storage container create --name $container --resource-group $rg --account-name $storage --output table
 ```
 
 ## Lab Prerequisites
