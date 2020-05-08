@@ -1,6 +1,6 @@
-# 4. Trigger a Snapshot
+# 5. Trigger a Snapshot
 
-## Table of Contents
+[Azure Data Share Lab](../README.md) > Create a Sent Share
 [Azure Data Share Lab](../README.md)
 * Lab 1 - [Create a Sent Share](../labs/01_create_share.md)
 * Lab 2 - [Accept an Azure Data Share Invitation](../labs/02_accept_invitation.md)
@@ -64,3 +64,5 @@ At this point, you will see logged information including:
 
 9. Click **Close**
 ![alt text](../images/azure_data_share_received_share_dataset_log.png "Azure Data Share - History")
+
+## Lab Series Complete

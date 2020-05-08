@@ -1,12 +1,6 @@
 # 1. Create a Sent Share
 
-## Table of Contents
-[Azure Data Share Lab](../README.md)
-* Lab 1 - Create a Sent Share
-* Lab 2 - [Accept an Azure Data Share Invitation](../labs/02_accept_invitation.md)
-* Lab 3 - [Map Dataset to Target Data Store](../labs/03_configure_dataset.md)
-* Lab 4 - [Configure a Snapshot Schedule](../labs/04_configure_snapshot.md)
-* Lab 5 - [Trigger a Snapshot](../labs/05_trigger_snapshot.md)
+[Azure Data Share Lab](../README.md) > Create a Sent Share
 
 ## Overview
 | Persona | Time | Action |
@@ -94,3 +88,5 @@ Note: As part of the data share creation process, the Azure Data Share resource 
     * Shared By (Full Name)
     * Shared On (Date Time)
 ![alt text](../images/azure_data_share_sent_share_invitations.png "Azure Data Share - Monitor Invitations")
+
+## Next Unit: [Accept an Azure Data Share Invitation](../labs/02_accept_invitation.md)

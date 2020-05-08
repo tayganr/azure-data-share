@@ -1,12 +1,6 @@
 # 4. Configure a Snapshot Schedule
 
-## Table of Contents
-[Azure Data Share Lab](../README.md)
-* Lab 1 - [Create a Sent Share](../labs/01_create_share.md)
-* Lab 2 - [Accept an Azure Data Share Invitation](../labs/02_accept_invitation.md)
-* Lab 3 - [Map Dataset to Target Data Store](../labs/03_configure_dataset.md)
-* Lab 4 - Configure a Snapshot Schedule
-* Lab 5 - [Trigger a Snapshot](../labs/05_trigger_snapshot.md)
+[Azure Data Share Lab](../README.md) > Configure a Snapshot Schedule
 
 ## Overview
 | Persona | Time | Action |
@@ -34,3 +28,5 @@ In this lab, you will:
 
 Once complete, you will see a notification confirming that the snapshot schedule has been successfully enabled.
 ![alt text](../images/azure_data_share_received_share_schedule_enabled.png "Azure Data Share - Schedule Enabled")
+
+## Next Unit: [Configure a Snapshot Schedule](../labs/04_configure_snapshot.md)

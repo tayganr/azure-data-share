@@ -1,12 +1,6 @@
 # 2. Accept an Azure Data Share Invitation
 
-## Table of Contents
-[Azure Data Share Lab](../README.md)
-* Lab 1 - [Create a Sent Share](../labs/01_create_share.md)
-* Lab 2 - Accept an Azure Data Share Invitation
-* Lab 3 - [Map Dataset to Target Data Store](../labs/03_configure_dataset.md)
-* Lab 4 - [Configure a Snapshot Schedule](../labs/04_configure_snapshot.md)
-* Lab 5 - [Trigger a Snapshot](../labs/05_trigger_snapshot.md)
+[Azure Data Share Lab](../README.md) > Accept an Azure Data Share Invitation
 
 ## Overview
 | Persona | Time | Action |
@@ -55,3 +49,5 @@ Review the details of the invitation:
 
 At this point, you will return to the **Received Shares** screen and see a notification that you have successfully created a share subscription.
 ![alt text](../images/azure_data_share_subscription.png "Azure Data Share - Created Subscription")
+
+## Next Unit: [Map Dataset to Target Data Store](../labs/03_configure_dataset.md)
