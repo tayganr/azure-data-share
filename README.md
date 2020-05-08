@@ -35,18 +35,18 @@ $csv1_filename = 'sales01.csv'
 $csv2_filename = 'sales02.csv'
 
 # Dummy Data
-$csv1_data = @"
-'business_unit','amount'
-'marketing',233
-'finance',318
-'sales',322
-"@
-$csv2_data = @"
-'business_unit','amount'
-'marketing',675
-'finance',54
-'sales',224
-"@
+$csv1_data = @'
+"business_unit","amount"
+"marketing",233
+"finance",318
+"sales",322
+'@
+$csv2_data = @'
+"business_unit","amount"
+"marketing",675
+"finance",54
+"sales",224
+'@
 
 # 1. Create a container within the storage account
 az storage container create --name $container --resource-group $rg --account-name $storage --output table
@@ -62,7 +62,6 @@ az storage blob upload --account-name $storage --container-name $container --nam
 # 4. Clean-up CSV files
 rm $csv1_filename
 rm $csv2_filename
-
 ```
 
 ### Data Consumer
@@ -73,7 +72,7 @@ $storage = az storage account list --resource-group $rg --output json --query "[
 $container = 'landing-zone'
 
 # Create a container within the storage account
-az storage container create --name $container --resource-group $rg --account-name $storage
+az storage container create --name $container --resource-group $rg --account-name $storage -- output table
 ```
 
 ## Lab Prerequisites
