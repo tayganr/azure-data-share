@@ -12,6 +12,43 @@ You can click the "Deploy to Azure" button to deploy the solution directly from 
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftayganr%2Fazure-data-share%2Fmaster%2Fazuredeploy.json)  
 
+## Post Resource Deployment
+```powershell
+# Define Variables
+$rg = 'rg_test_000'
+$storage = az storage account list --resource-group $rg --output json --query "[0].name"
+$container = 'sales'
+$csv1_filename = 'sales01.csv'
+$csv2_filename = 'sales02.csv'
+$csv1_data = @"
+'business_unit','amount'
+>> 'marketing',233
+>> 'finance',318
+>> 'sales',322
+>> "@
+$csv2_data = @"
+'business_unit','amount'
+'marketing',675
+'finance',54
+sales',224
+"@
+
+
+# 1. Create a container within the storage account
+az storage container create --name $container --resource-group $rg --account-name $storage
+
+# 2. Generate CSV files
+$csv1_data >> $csv1_filename
+$csv2_data >> $csv2_filename
+
+# 3. Upload CSV files to storage
+az storage blob upload --account-name $storage --container-name $container --name sales01.csv --file sales01.csv
+
+# 4. Clean-up CSV files
+rm $csv1_filename
+rm $csv2_filename
+```
+
 ## Lab Prerequisites
 
 **Data Provider**
