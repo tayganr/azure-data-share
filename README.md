@@ -12,10 +12,23 @@ You can click the "Deploy to Azure" button to deploy the solution directly from 
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftayganr%2Fazure-data-share%2Fmaster%2Fazuredeploy.json)  
 
-## Post Resource Deployment
+## Post Resource Deployment (PowerShell)
+The PowerShell script below will do the following:  
+
+**Data Provider**
+1. Create a `sales` container within your storage account.
+2. Generate two dummy CSV files (sales01.csv, sales02.csv).
+3. Upload CSV files to your storage account within the `sales` container.
+
+**Data Consumer**
+1. Create a `landing-zone` container within your storage account.
+
+Note: You will need to update the name of the variable `$rg` with the name of your resource group.
+
+### Data Provider
 ```powershell
 # Define Variables
-$rg = 'rg_test_000'
+$rg = 'MyResourceGroup'
 $storage = az storage account list --resource-group $rg --output json --query "[0].name"
 $container = 'sales'
 $csv1_filename = 'sales01.csv'
@@ -33,7 +46,6 @@ $csv2_data = @"
 sales',224
 "@
 
-
 # 1. Create a container within the storage account
 az storage container create --name $container --resource-group $rg --account-name $storage
 
@@ -49,9 +61,21 @@ rm $csv1_filename
 rm $csv2_filename
 ```
 
+### Data Consumer
+```powershell
+# Define Variables
+$rg = 'MyResourceGroup'
+$storage = az storage account list --resource-group $rg --output json --query "[0].name"
+$container = 'landing-zone'
+
+# Create a container within the storage account
+az storage container create --name $container --resource-group $rg --account-name $storage
+```
+
 ## Lab Prerequisites
 
 **Data Provider**
+These prerequisites can be met by clicking "Deploy to Azure" button above and running the Data Provider post resource deployment script.
 1. [Azure Subscription](https://azure.microsoft.com/en-us/free/)
 2. [Create an Azure Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) (e.g. datashare_rg_provider)
 3. [Create an Azure Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) (e.g. datastorageprovider<random_id>)
@@ -60,6 +84,7 @@ rm $csv2_filename
 4. [Create an Azure Data Share Account](https://docs.microsoft.com/en-us/azure/data-share/share-your-data#create-a-data-share-account) (e.g. datashare_acct_provider)
 
 **Data Consumer**
+These prerequisites can be met by clicking "Deploy to Azure" button above and running the Data Consumer post resource deployment script.
 1. [Azure Subscription](https://azure.microsoft.com/en-us/free/)
 2. [Create an Azure Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) (e.g. datashare_rg_consumer)
 3. [Create an Azure Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) (e.g. datastorageconsumer<random_id>)
