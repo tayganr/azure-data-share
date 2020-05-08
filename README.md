@@ -28,7 +28,7 @@ Note: You will need to update the name of the variable `$rg` with the name of yo
 ### Data Provider
 ```powershell
 # Define Variables
-$rg = 'MyResourceGroup'
+$rg = 'share_provider'
 $storage = az storage account list --resource-group $rg --output json --query "[0].name"
 $container = 'sales'
 $csv1_filename = 'sales01.csv'
@@ -40,32 +40,34 @@ $csv1_data = @"
 >> 'sales',322
 >> "@
 $csv2_data = @"
-'business_unit','amount'
-'marketing',675
-'finance',54
-sales',224
+>> 'business_unit','amount'
+>> 'marketing',675
+>> 'finance',54
+>> sales',224
 "@
 
 # 1. Create a container within the storage account
-az storage container create --name $container --resource-group $rg --account-name $storage
+az storage container create --name $container --resource-group $rg --account-name $storage --output table
 
 # 2. Generate CSV files
 $csv1_data >> $csv1_filename
 $csv2_data >> $csv2_filename
 
 # 3. Upload CSV files to storage
-az storage blob upload --account-name $storage --container-name $container --name sales01.csv --file sales01.csv
+az storage blob upload --account-name $storage --container-name $container --name $csv1_filename --file $csv1_filename --output table
+az storage blob upload --account-name $storage --container-name $container --name $csv2_filename --file $csv2_filename --output table
 
 # 4. Clean-up CSV files
 rm $csv1_filename
 rm $csv2_filename
+
 ```
 
 ### Data Consumer
 ```powershell
 # Define Variables
-$rg = 'MyResourceGroup'
-$storage = az storage account list --resource-group $rg --output json --query "[0].name"
+$rg = 'share_consumer'
+$storage = az storage account list --resource-group $rg --output json --query "[0].name" --output table
 $container = 'landing-zone'
 
 # Create a container within the storage account
